@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Converter Temperatura</title>
+</head>
+<body>
+  <script src="function.js"></script>
+  <main>
+    <h1>Converter Temperatura <img class = "imageLogo" src="img/temperature.png" alt="termômetro"> </h1>
+    <article class="content">
+      <div class="convertFahrenheit" aria-labelledby="labelconvertFahrenheit">
+        <span class="detail"></span> 
+        <h2 id="labelconvertFahrenheit">Fahrenheit para Celsius &#8457 → &deg;C</h2>
+        <label for="">Digite a temperatura em &#8457</label> 
+        <input type="text" id="fahrenheit">
+        <br>
+        <a class="button"onclick="fahrenheittoCelsius()" id="fahrenheit">CONVERTER</a>
+        <br>
+        <label for="">Temperatura em &deg;C </label>
+        <input type="text" id="resultCelsius">
+      </div>
+    </article>    
+    <article class="content">
+      <div class="convertCelsius" aria-labelledby="labelconvertCelsius">
+        <span class="detail"></span> 
+        <h2 id="labelconvertCelsius">Celsius para Fahrenheit &deg;C → &#8457</h2>
+        <label for="">Digite a temperatura em &deg;C</label> 
+        <input type="text" id="celsius">
+        <br>
+        <a class="button" onclick="celsiustoFahrenheit()" id="celsius">CONVERTER</a>
+        <br>
+        <label for="">Temperatura em &#8457</label><input type="text" id="resultFahrenheit">
+      </div>
+    </article>    
+  </main> 
+    <footer class="rodape">
+      <p>©2023 github@marinaarosa.</p>
+    </footer>
+</body>
+</html>
